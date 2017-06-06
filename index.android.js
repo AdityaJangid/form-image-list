@@ -12,11 +12,11 @@ import SliderEntry from 'form_image_list/components/SliderEntry';
 import styles from 'form_image_list/styles/index.style';
 import { ENTRIES1, ENTRIES2 } from 'form_image_list/static/entries';
 
-
 import {
   AppRegistry,
   StyleSheet,
 	Button,
+	Alert,
 } from 'react-native';
 
 import { Form,
@@ -25,6 +25,64 @@ import { Form,
 } from 'react-native-form-generator';
 
 import ImageSlider from 'react-native-image-slider';
+
+
+
+const onButtonPress = () => {
+fetch('http://192.168.2.116:3000/company/', {  
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    name: 'adit',
+    numberOfEmployees: 34,
+  })
+}).then(function(response) {
+	Alert.alert(response.name);
+	{/* console.log(response) */}
+    })
+};
+class form_image_list extends Component {
+
+
+
+
+
+
+
+
+  render() {
+    return (
+      <View>
+	<Text style={styles.welcome}>
+		  welcome to react native!
+        </Text>
+	<Form>
+	<InputField ref='first_name'  placeholder='First Name'/>
+        <InputField ref='last_name' placeholder='Last Name'/>
+	<InputField ref='Address' placeholder='Address'/>
+	 <Button  onPress={onButtonPress} title="submit" color="#91D9D6"/>
+	</Form>
+      </View>
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,27 +188,7 @@ render() {
 }
 
 
-class form_image_list extends Component {
-
-
-  render() {
-    return (
-      <View>
-	<Text style={styles.welcome}>
-		  welcome to react native!
-        </Text>
-	<Form>
-	<InputField ref='first_name'  placeholder='First Name'/>
-        <InputField ref='last_name' placeholder='Last Name'/>
-	<InputField ref='Address' placeholder='Address'/>
-	 <Button title="Submit" color="#91D9D6"/>
-	</Form>
-      </View>
-    );
-  }
-}
 
 
 
-
-AppRegistry.registerComponent('form_image_list', () => example);
+AppRegistry.registerComponent('form_image_list', () => form_image_list);

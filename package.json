@@ -11,6 +11,7 @@
     "react-native": "0.44.2",
     "react-native-form-generator": "^0.9.9",
     "react-native-image-slider": "^1.1.5",
+    "react-native-listener": "^1.0.2",
     "react-native-snap-carousel": "^2.1.4"
   },
   "devDependencies": {
