@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "react": "16.0.0-alpha.6",
+    "react-breadcrumbs": "^1.6.6",
     "react-native": "0.44.2",
     "react-native-form-generator": "^0.9.9",
     "react-native-image-slider": "^1.1.5",

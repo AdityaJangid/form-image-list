@@ -49,5 +49,13 @@ export default StyleSheet.create({
         marginBottom: 30
     },
     sliderContainer: {
-    }
+    },
+
+	textInput: {
+      margin: 15,
+      height: 35,
+      borderWidth: 1,
+      backgroundColor: '#7685ed'
+   }
+
 });

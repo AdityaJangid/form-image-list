@@ -81,5 +81,28 @@ export default StyleSheet.create({
     },
     subtitleEven: {
         color: 'rgba(255, 255, 255, 0.7)'
-    }
+    },
+    container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+    welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+    instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+
+
 });
+
+
+
+
+
