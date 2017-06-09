@@ -47,7 +47,7 @@ To generate the Signed apk use to following steps :-
  ```sudo apt-get install -y mongodb-org```
 
  - Step 5 - Start the daemon
- ```sudo systemctl start mongod
+ ``` sudo systemctl start mongod
     sudo systemctl enable mongod ```
 
 ### If you got any error like "Failed global initialization: BadValue Invalid or no user locale set. Please ensure LANG and/or LC_* environment variables are set correctly." then add the following to your ~/.bashrc file 
