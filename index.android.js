@@ -102,7 +102,7 @@ onButtonPress = () => {
 			Age: this.state.Age,
 		})
 	}).then(function(response) {
-		Alert.alert(response.FullName);
+		Alert.alert("Data Saved");
 		})
 };
 	render() {
